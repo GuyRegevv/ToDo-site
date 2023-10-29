@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="Assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Shalimar&display=swap" rel="stylesheet">
+    <script src="Assets/scripts/app.js" defer></script>
+  </head>
+
+  <body>
+    <div id="backdrop"></div>
+    <div class="modal card" id="add-modal">
+      <div class="modal-details">
+        <label for="description">Whats the mission?</label>
+        <input type="text" name="description" class="description">
+        <label for="end-date">End Date</label>
+        <input type="date" name="end-date" class="end-date">
+        <label for="mission-link">link</label>
+        <input type="file" name="mission-link" class="mission-link">
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn--active">Add</button>
+        <button class="btn btn--passive">Cancel</button>
+      </div>
+    </div>
+
+    <header>
+      <h1>My Missons</h1>
+      <button id="new-mission-btn">ADD A MISSION</button>
+    </header>
+
+    <main>
+    <div class="main-space">
+        <div id="entry-text" class="card">
+          <p>Your personal To-Do list!</p>
+        </div>
+        <ul id="todo-list">
+            <li class="list-item">
+                <div class="list-item_container list-item_index">1</div>
+                <div class="list-item_container list-item_description">homework in geography</div>
+                <div class="list-item_container list-item_endDate">27 NOV</div>
+                <div class="list-item_container list-item_status">
+                  <div class="status-dot"></div>
+                </div>
+                <div class="list-item_container list-item_link">
+                  <a href="https://example.com"> (-) </a>
+                </div>
+                <div class="list-item_container list-item_progress">
+                  <div class="progress-container">
+                    <div class="progress-bar"></div>
+                  </div>
+                </div>
+                <div class="list-item_container list-item_actions">
+                  <button>V</button>
+                  <button>X</button>
+                  <button>...</button>
+                </div>
+            </li>   
+            <li class="list-item">
+              <div class="list-item_container list-item_index"></div>
+              <div class="list-item_container list-item_description"></div>
+              <div class="list-item_container list-item_endDate"></div>
+              <div class="list-item_container list-item_status"></div>
+              <div class="list-item_container list-item_link"></div>
+              <div class="list-item_container list-item_progress"></div>
+              <div class="list-item_container list-item_actions"></div>
+          </li>     
+        </ul>
+    </div>
+    </main>
+  </body>
+</html>
