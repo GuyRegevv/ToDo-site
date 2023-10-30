@@ -103,6 +103,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 2.5rem;
+    margin-bottom: 2rem;
+    background-color: rgb(12, 11, 11);
 }
 
 header h1 {
@@ -123,7 +125,6 @@ header button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
 }
 
 #entry-text {
@@ -142,12 +143,11 @@ header button {
     max-width: 90%;
     margin: 1rem auto;
     padding: 0;
-    background-color: tomato;
 }
 
 .list-item {
     display: flex;
-    background-color: teal;
+    background-color: white;
     height: 3rem;
     width: 100%;
     margin: 9px 0px;
