@@ -62,20 +62,23 @@ const updateUI = () => {
     }
 }
 
-// const updateIdx = () => {
-//     let count = 0;
-//     const idxList = document.querySelectorAll('list-item-index');
-//     for (let idx in idxList) {
-//         idx.innerHTML = count;
-//         count++;
-//     }
-// }
+const updateIdx = () => {
+    let count = 0;
+    const idxList = document.querySelectorAll('.list-item_index');
+    console.log(idxList);
+    
+    for (const idx of idxList) {
+        idx.innerHTML = `${count}`;
+        count++;
+    }
+}
 
 const deleteMission = (id) => {
     missions.splice(id, 1);
     const listRoot = document.getElementById('todo-list');
     listRoot.children[id].remove();
     updateUI();
+    updateIdx();
 } //not working properly becuse the index is changing. uniqe id will fix
 
 const rendernewMission = (id, desc, date, file) => {
